@@ -16,4 +16,12 @@ class Movie extends Model
     {
         return $this->hasMany(Review::class);
     }
+
+    protected $casts = [
+        "rented" => "boolean"
+    ];
+
+    protected $fillable = [
+        "title", "year", "director", "poster", "synopsis", "rented", "category_id", "trailer"
+    ];
 }

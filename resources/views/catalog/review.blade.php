@@ -31,7 +31,6 @@
             <div class="col-xs-6 col-sm-4 col-md-1" style="display:flex; align-items:center; margin-top:-5%; justify-content:center">
                 <form action="{{action('CatalogController@deleteReview', $review->id)}}" method="POST">
                         {{ method_field('DELETE') }}
-                        {{ csrf_field() }}
                         <button type="submit" class="btn btn-danger">
                             Eliminar
                         </button>

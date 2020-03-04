@@ -58,7 +58,7 @@ Route::get('/catalog/edit/{id}','CatalogController@getEdit')->middleware('auth')
 
 Route::get('/home', 'HomeController@getHome')->name('home');
 
-Route::post('catalog/create','CatalogController@postCreate')->middleware('auth');
+Route::post('/catalog/create','CatalogController@postCreate')->middleware('auth');
 
 Route::post('/review/create','CatalogController@createReview')->middleware('auth');
 
